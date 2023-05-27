@@ -1,0 +1,18 @@
+1st  ==> make sure you have node_modules folder
+
+------------------------Package .json----------------------------
+"prettier":"npx prettier --write '**/*.html" //this will formart the tailwind classes used in html into a standard class order recommended by tail wind 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
