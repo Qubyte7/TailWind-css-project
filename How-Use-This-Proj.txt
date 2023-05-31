@@ -2,13 +2,21 @@
 
 ------------------------Package .json----------------------------
 "prettier":"npx prettier --write '**/*.html" //this will formart the tailwind classes used in html into a standard class order recommended by tail wind 
+-------------------------Extends in TAILWIND.config-----------------------------------------------
+the extend property is used to customize the theme by adding additional screen sizes.
 
+---------------------------tailwind.config.js------------------------------------------
+ content: ["./build/*.html","./build/js/*.js"],
+    ====>for this we specified that our tai may wacth our Javascript so that if we refer to the class that is not in the HTML the class may also be included in the html OR BE INCLUDED iN the HTML 
 
+---------------------------Input.Css---------------------------------------------------
+  .toggle-btn{
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]        
+  }
 
-
-
-
-
+      ==>>This @apply used is used for allowing us to use the normal tailWind Classesin our own class called toggleBtn
+      ===>> NOTE that When you want to specify a specific value for a property exampl like width you would use these [] --->>> w-[120px]
+      ===>>& ---> respresemts the parent tag and then the (&>div) means the descendantwhich are div !!!!==>>Look well in our program you wull find that the element we are talking about the Menu Btn
 
 
 
