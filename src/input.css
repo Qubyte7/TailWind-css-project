@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+@layer utilities{
+  .section-min-height{
+    min-length: calc(100vh -68px)
+  }
+}
+
