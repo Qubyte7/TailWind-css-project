@@ -9,6 +9,8 @@ the extend property is used to customize the theme by adding additional screen s
  content: ["./build/*.html","./build/js/*.js"],
     ====>for this we specified that our tai may wacth our Javascript so that if we refer to the class that is not in the HTML the class may also be included in the html OR BE INCLUDED iN the HTML 
 
+
+NB:not that pay attention to the class you specify
 ---------------------------Input.Css---------------------------------------------------
   .toggle-btn{
     @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]        

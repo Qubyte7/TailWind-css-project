@@ -1,11 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/*.html","./build/js/*.js"],
+  // content: ["./build/*.html","./build/js/*.js"], //this can also be written like specified under
+  content: ["./build/**/*.{html,js}"],//but note that using this way we could not use it with only html we need to have another file extension 
   theme: {
     extend: {
       screens:{
+        colors:{
+          papayawhip:{
+            light:'#fef4e4',
+            DEFAULT:'#ffefd5',
+            dark:'#fee5bc',
+          },
+        },
         'widescreen':{'raw':'(min-aspect-ratio: 3/2)'},
-        'tallscreen':{'raw':'(min-aspect-ratio: 13/20)'},
+        'tallscreen':{'raw':'(max-aspect-ratio: 13/20)'},
       },
       keyframes:{
         'open-menu':{
